@@ -6779,7 +6779,7 @@ textarea.textarea-lg {
 .breadcrumbs-custom-path {
   margin-left: -15px;
   margin-right: -15px;
-  font-size: 14px;
+  font-size: 30px;
   line-height: 1.33;
   font-weight: 500;
   letter-spacing: .1em;
@@ -6830,7 +6830,10 @@ textarea.textarea-lg {
 
 @media (min-width: 576px) {
   * + .breadcrumbs-custom-path {
-    margin-top: 18px; } }
+    margin-top: 18px; }
+
+  .breadcrumbs-custom-title2 {
+    padding: 150px 0; } }
 @media (min-width: 1200px) {
   .breadcrumbs-custom {
     padding: 150px 0; } }
@@ -7596,7 +7599,7 @@ textarea.textarea-lg {
     padding-top: 75px; } }
 .footer-corporate-bottom-panel {
   padding: 30px 0;
-  background: #11263a;
+  background: #Eb1212;
   color: rgba(255, 255, 255, 0.3); }
 
 .footer-minimal {
@@ -10761,7 +10764,7 @@ html [class*='section-'].section-top-0 {
 .context-dark h1,
 .bg-gray-dark h1,
 .bg-primary h1, .context-dark h2, .bg-gray-dark h2, .bg-primary h2, .context-dark h3, .bg-gray-dark h3, .bg-primary h3, .context-dark h4, .bg-gray-dark h4, .bg-primary h4, .context-dark h5, .bg-gray-dark h5, .bg-primary h5, .context-dark h6, .bg-gray-dark h6, .bg-primary h6, .context-dark [class*='heading-'], .bg-gray-dark [class*='heading-'], .bg-primary [class*='heading-'] {
-  color: #ffffff; }
+  color: #3f295e; }
 
 .context-dark .form-wrap.has-error .form-input, .bg-gray-dark .form-wrap.has-error .form-input, .bg-primary .form-wrap.has-error .form-input {
   border-color: transparent; }
@@ -11896,7 +11899,7 @@ html.tablet .ui-to-top {
   color: #01b3a7; }
 
 .rd-navbar-static .rd-nav-item.active .rd-nav-link {
-  color: #01b3a7;
+  color: #Ff9933;
   background: transparent; }
 
 .rd-navbar-static .rd-nav-item.active > .rd-navbar-submenu-toggle {
@@ -11943,7 +11946,7 @@ html.tablet .ui-to-top {
   transition: .25s; }
 
 .rd-navbar-static .rd-nav-link:hover {
-  color: #01b3a7; }
+  color: #Ff9933; }
 
 .rd-navbar-static .rd-menu {
   z-index: 15;
@@ -14867,7 +14870,7 @@ html.rd-navbar-fixed-linked .page {
           align-items: center; }
 
 .rd-navbar-corporate.rd-navbar-static .rd-navbar-main-outer {
-  background: #F2455A; }
+  background: #Eb1212; }
 
 .rd-navbar-corporate.rd-navbar-static .rd-navbar-nav-wrap {
   display: -webkit-box;
@@ -21419,5 +21422,151 @@ img.mfp-img {
      object-position: center;
   width: 100%;
   height: 100%; }
+
+/*-----------------------------------------
+8. ESTILOS PARA "#bienvenidos"
+------------------------------------------*/
+.contenedor-video a {
+  background-color: rgba(255, 255, 255, 0.79);
+  width: 7rem;
+  height: 7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 50%;
+  font-size: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-clip: padding-box;
+  border: 0 solid transparent;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease; }
+
+.contenedor-video a:hover {
+  color: #fff;
+  border: 10px solid rgba(255, 255, 255, 0.5); }
+
+.contenedor-video img {
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease; }
+
+.contenedor-video:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2); }
+
+.text-arid {
+  color: #Eb1212 !important; }
+
+/*-----------------------------------------
+15. ESTILOS PARA "#nuestra-app"
+------------------------------------------*/
+#nuestra-app::before {
+  content: "";
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0; }
+
+.separador-titulos {
+  display: inline-block;
+  margin-top: 2rem;
+  height: 4px;
+  width: 80px;
+  background: #Ff9933; }
+
+/*-----------------------------------------
+3. ESTILOS COLOR PRINCIPAL
+------------------------------------------
+
+.bg-primary {
+    background-color: $principal !important;
+}*/
+.text-primary {
+  color: #19D8FE !important; }
+
+/*Estilos btn-primary*/
+.btn-primary {
+  color: #fff;
+  background-color: #19D8FE;
+  border-color: #19D8FE;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease; }
+
+.btn-primary:hover {
+  color: #35363c;
+  background-color: #fff;
+  border-color: #19D8FE; }
+
+.btn-primary:active {
+  color: #35363c !important;
+  background-color: #32dcfe !important;
+  border-color: #4ce1fe !important; }
+
+/*Insertamos la fecha del boton principal*/
+.btn-primary:after {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: "\f027";
+  position: relative;
+  left: .6rem;
+  top: .1rem;
+  -webkit-transition: left .3s ease;
+  transition: left .3s ease; }
+
+.btn-primary:hover:after,
+.btn-primary:focus:after,
+.btn-primary:active:after {
+  left: .25rem; }
+
+/*Insertamos la caja blanca del boton principal*/
+.btn-primary:before {
+  content: "";
+  z-index: -1;
+  width: 0;
+  height: 100%;
+  background: #fff;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  -webkit-transform: skew(45deg, 0);
+          transform: skew(45deg, 0);
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease; }
+
+.btn-primary:hover:before,
+.btn-primary:focus:before,
+.btn-primary:active:before {
+  width: 130%;
+  left: -15%; }
+
+/*-----------------------------------------
+10. ESTILOS PARA "#premios"
+------------------------------------------*/
+.contador-linea {
+  background-color: #Ff9933;
+  width: 4rem;
+  height: .4rem;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease; }
 
 /*# sourceMappingURL=style.css.map */

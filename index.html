@@ -9,11 +9,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta charset="utf-8">
   <script src="/cdn-cgi/apps/head/3ts2ksMwXvKRuG480KNifJ2_JNM.js"></script>
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/marca1.png" type="image/x-icon">
+
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v9.0"
+    nonce="B9XB0NMG"></script>
+
   <!-- Stylesheets-->
   <link rel="stylesheet" type="text/css"
     href="//fonts.googleapis.com/css?family=Montserrat:400,500,600,700%7CPoppins:400%7CTeko:300,400">
   <link rel="stylesheet" href="css/bootstrap.css">
+
+
+  <!-- Carga del CSS de "VenoBox" -->
+  <link rel="stylesheet" href="css/venobox.css">
+  <!-- Carga del CSS de "Jarallax" -->
+  <link rel="stylesheet" href="css/jarallax.css">
+
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/style.css">
 
@@ -41,28 +53,27 @@
                 <!-- RD Navbar Toggle-->
                 <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
                 <!-- RD Navbar Brand-->
-                <div class="rd-navbar-brand"><a class="brand" href="index.html"><img src="images/" alt=""
-                      width="188" height="19" /></a></div>
+                <div class="rd-navbar-brand"><a class="brand" href="index.html"><img src="images/logo-horizontal.png"
+                      alt="" width="188" height="19" /></a></div>
               </div>
               <div class="rd-navbar-aside-right rd-navbar-collapse">
                 <ul class="rd-navbar-corporate-contacts">
-                    <li>
-                        <div class="unit unit-spacing-xs">
-                          <div class="unit-left"><span class="icon fa fa-user"></span></div>
-                          <div class="unit-body">
-                            <p>Contactate <span></span>con nosotros<span></span></p>
-                          </div>
-                        </div>
-                      </li>
                   <li>
                     <div class="unit unit-spacing-xs">
-                      <div class="unit-left"><span class="icon fa fa-phone"></span></div>
-                      <div class="unit-body"><a target="_blank" class="link-phone"
-                          href=" https://wa.me/5492644801082?text=Hola%20quisiera%20que%20me%20den%20mas%20información">+54
+                      <div class="unit-left"><span class="icon fa fa-user"></span></div>
+                      <div class="unit-body">
+                        <p>Contactate <span></span>con nosotros<span></span></p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="unit unit-spacing-xs">
+                      <div class="unit-left"><span class="icon fa fa-whatsapp"></span></div>
+                      <div class="unit-body"><a target="_blank" class="link-phone" href="#">+54
                           92644801082</a></div>
                     </div>
                   </li>
-                </ul><a class="button button-md button-default-outline-2 button-ujarak" href="#">Donar</a>
+                </ul><a class="button button-md button-default-outline-2 button-ujarak" href="donar.html">Donar</a>
               </div>
             </div>
           </div>
@@ -70,49 +81,70 @@
             <div class="rd-navbar-main">
               <div class="rd-navbar-nav-wrap">
                 <ul class="list-inline list-inline-md rd-navbar-corporate-list-social">
-                  <li><a target="_blank" class="icon fa fa-facebook"
-                      href="https://www.facebook.com/ARIDasociacion"></a></li>
+                  <li><a target="_blank" class="icon fa fa-facebook" href="https://www.facebook.com/ARIDasociacion"></a>
+                  </li>
                   <li><a target="_blank" class="icon fa fa-instagram"
                       href="https://www.instagram.com/aridasociacion/?hl=es-la"></a></li>
-                      <li><a target="_blank" class="icon fa fa-youtube"
-                        href="https://www.instagram.com/aridasociacion/?hl=es-la"></a></li>
+                  <li><a target="_blank" class="icon fa fa-youtube"
+                      href="https://www.instagram.com/aridasociacion/?hl=es-la"></a></li>
                 </ul>
                 <!-- RD Navbar Nav-->
                 <ul class="rd-navbar-nav">
-                  <li class="rd-nav-item active"><a class="rd-nav-link" href="index.html">Home</a>
+                  <li class="rd-nav-item"><a class="rd-nav-link" href="index.html">Home</a>
                   </li>
                   <li class="rd-nav-item"><a class="rd-nav-link" href="nosotros.html">Conocenos</a>
-
+                    <!--<ul class="rd-menu rd-navbar-dropdown">
+                      <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="#">Material de Interés</a>
+                      </li>
+                    </ul>-->
                   </li>
-                  <li class="rd-nav-item"><a class="rd-nav-link" href="#">Educacion</a>
+                  <li class="rd-nav-item"><a class="rd-nav-link" href="#">Escuela Aleluya</a>
                     <!-- RD Navbar Dropdown-->
                     <ul class="rd-menu rd-navbar-dropdown">
-                        <li class="rd-dropdown-item"><a class="rd-dropdown-link"
-                                href="aleluya.html">Educacion Especial Aleluya</a>
-                        </li>
-                        <li class="rd-dropdown-item"><a class="rd-dropdown-link"
-                            href="centrodia.html">Centro de Día Vida Nueva</a>
-                    </li>
+                      <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="aleluya.html">Atención Temprana
+                          ANIDAR</a>
+                      </li>
+                      <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="educacioninclusiva.html">Apoyo a la
+                          Educación Inclusiva</a>
+
+                        <ul class="rd-menu rd-navbar-dropdown">
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="centrodia.html">Nivel
+                              inicial</a>
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="centrodia.html">Nivel
+                              Primario</a>
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="centrodia.html">Nivel
+                              Secundario</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="centrodia.html">Centro de formación
+                          social y laboral VIDA NUEVA</a>
+                      </li>
                     </ul>
-                </li>
+                  </li>
 
                   <li class="rd-nav-item"><a class="rd-nav-link" href="#">Programas</a>
                     <ul class="rd-menu rd-navbar-dropdown">
-                      <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="programaempleo.html">Programa de Empleo y Vida Adulta</a>
+
+                      <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="programaempleo.html">Programa de
+                          Inclusión Laboral y Vida Adulta</a>
                       </li>
-                      <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="programaincluiva.html">Programa de apoyo a la educación inclusiva</a>
+                      <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="programaincluiva.html">Programa de
+                          apoyo a la Educación Inclusiva</a>
                       </li>
                     </ul>
                   </li>
-                  <li class="rd-nav-item"><a class="rd-nav-link" href="material.html">Material de Interés</a>
+                  <li class="rd-nav-item"><a class="rd-nav-link" href="#">Capacitaciones</a>
                   </li>
-                  <li class="rd-nav-item"><a class="rd-nav-link" href="colabora.html">Colaborá</a>
+                  <li class="rd-nav-item"><a class="rd-nav-link" href="#">Colaborá</a>
                     <ul class="rd-menu rd-navbar-dropdown">
-                    <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="serpadrino.html">Ser Padrino</a>
-                    </li>
-                  </ul>
+                      <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="donar.html">Donar</a>
+                      </li>
+                      <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="serpadrino.html">Ser Padrino</a>
+                      </li>
+                    </ul>
                   </li>
-                  <li class="rd-nav-item"><a class="rd-nav-link" href="trabaja.html">Trabaja con Nosotros</a>
+                  <li class="rd-nav-item"><a class="rd-nav-link" href="trabaja.html">RRHH</a>
                   </li>
 
                 </ul>
@@ -123,223 +155,216 @@
       </div>
     </header>
     <!-- Swiper------------------------------------------------->
+    <div class="d-none d-md-block">
     <section class="section swiper-container swiper-slider swiper-slider-corporate swiper-pagination-style-2"
       data-loop="true" data-autoplay="5000" data-simulate-touch="true" data-nav="false" data-direction="vertical">
-      <div class="swiper-wrapper text-left">
-        <div class="swiper-slide context-dark" data-slide-bg="images/WEB1.png">
+      <div class="text-left swiper-wrapper">
+        <div class="swiper-slide context-dark" data-slide-bg="images/donar-arid2.png">
           <div class="swiper-slide-caption section-md">
             <div class="container">
               <div class="row">
                 <div class="col-md-10">
-                  <h6 class="text-uppercase" data-caption-animate="fadeInRight" data-caption-delay="0">Ayudanos a seguir creciendo </h6>
+                  <h6 class="text-uppercase" data-caption-animate="fadeInRight" data-caption-delay="0">Colaborá con
+                    Nosotros </h6>
                   <h2 class="oh font-weight-light" data-caption-animate="slideInUp" data-caption-delay="100">
-                    <span>Asociate</span><span class="font-weight-bold"> a la ASN</span></h2><a
-                    class="button button-default-outline button-ujarak" href="asociate.html" data-caption-animate="fadeInLeft"
-                    data-caption-delay="0">Asociate</a>
+                    <span>Ayudanos</span><span class="font-weight-bold"> Doná</span></h2><a
+                    class="button button-default-outline button-ujarak" href="donar.html"
+                    data-caption-animate="fadeInLeft" data-caption-delay="0">Donar</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="swiper-slide context-dark" data-slide-bg="images/1.png">
+        <div class="swiper-slide context-dark" data-slide-bg="images/somos-arid.png">
           <div class="swiper-slide-caption section-md">
             <div class="container">
               <div class="row">
-                <div class="col-md-10">
-                  <h6 class="text-uppercase" data-caption-animate="fadeInRight" data-caption-delay="0"></h6>
+                <!-- <div class="col-md-10">
+                  <h6 class="text-uppercase" data-caption-animate="fadeInRight" data-caption-delay="0">Apadrina a una
+                    Persona con Discapacidad</h6>
                   <h2 class="oh font-weight-light" data-caption-animate="slideInUp" data-caption-delay="100">
-                    <span></span><span class="font-weight-bold"> </span></h2><!--<a
-                    class="button button-default-outline button-ujarak" href="#" data-caption-animate="fadeInLeft"
-                    data-caption-delay="0"></a>!-->
-                </div>
+                    <span></span><span class="font-weight-bold"> </span></h2><a
+                    class="button button-default-outline button-ujarak" href="serpadrino.html"
+                    data-caption-animate="fadeInLeft" data-caption-delay="0"></a>
+                </div>-->
               </div>
             </div>
           </div>
         </div>
-        <!--<div class="swiper-slide context-dark" data-slide-bg="images/1C.png">
-          <div class="swiper-slide-caption section-md">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-10">
-                  <h6 class="text-uppercase" data-caption-animate="fadeInRight" data-caption-delay="0">Build your Next
-                    Holiday Trip with Us</h6>
-                  <h2 class="oh font-weight-light" data-caption-animate="slideInUp" data-caption-delay="100">
-                    <span>Create</span><span class="font-weight-bold"> Your Tour</span></h2><a
-                    class="button button-default-outline button-ujarak" href="#" data-caption-animate="fadeInLeft"
-                    data-caption-delay="0">Get in touch</a>
-                </div>
-              </div>
-            </div>-->
-          </div>
-        </div>
+
       </div>
-      <!-- Swiper Pagination-->
+
+        
+        <!-- Swiper Pagination-->
       <div class="swiper-pagination"></div>
-    </section>
-   
 
-    <!-- Discover New Horizons-->
-    <section class="section section-sm section-first bg-default text-md-left">
-      <div class="container">
-        <div class="row row-50 align-items-center justify-content-center justify-content-xl-between">
-          <div class="col-lg-4 text-center wow fadeInUp"><img src="images/asociate.png" alt="" width="556"
-              height="382" />
-          </div>
-          <div class="col-lg-8 wow fadeInRight" data-wow-delay=".1s">
-            <div class="box-width-lg-470">
-              <h3>Asociate a la ASN</h3>
-              <!-- Bootstrap tabs-->
-              <div
-                class="tabs-custom tabs-horizontal tabs-line tabs-line-big tabs-line-style-2 text-center text-md-left"
-                id="tabs-7">
-                <!-- Nav tabs-->
-                <ul class="nav nav-tabs">
-                  <li class="nav-item" role="presentation"><a class="nav-link active" href="#tabs-7-1"
-                      data-toggle="tab">Sobre nosotros</a></li>
-                  <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-7-2" data-toggle="tab">Porque
-                      ASN</a></li>
-                  <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-7-3"
-                      data-toggle="tab">Beneficios</a></li>
-                </ul>
-                <!-- Tab panes-->
-                <div class="tab-content">
-                  <div class="tab-pane fade show active" id="tabs-7-1">
-                    <p>Los Licenciados en Nutrición somos un eslabón fundamental en la formulación, organización,
-                      ejecución, supervisión y evaluación de planes y programas de nutrición y alimentación en los
-                      distintos niveles. Es por ello, que en adelante, estamos dispuestos a ofrecer todo nuestro
-                      conocimiento, capacidad profesional y ética en pos de una mejora de la situación alimentaria
-                      nutricional que nos toca atravesar en estos tiempos..</p>
-                    <div class="group-md group-middle"><a class="button button-secondary button-pipaluk"
-                        href="asociate.html">Asociate</a></div>
-                  </div>
-                  <div class="tab-pane fade" id="tabs-7-2">
-                    <p>La ASN aspira a alcanzar la representación plena de sus asociados y la protección tanto de
-                      los intereses individuales de los miembros cuanto los intereses societarios, en beneficio de la
-                      profesión, de ellos mismos y de la población en general.</p>
-                    <div class="group-md group-middle"><a class="button button-secondary button-pipaluk"
-                        href="asociate.html">Asociate</a></div>
-                  </div>
-                  <div class="tab-pane fade" id="tabs-7-3">
-                    <p>ASN representa y defiende los intereses de todos los profesionales de la Nutrición, en beneficio
-                      de la profesión, de ellos mismos y colabora en la promoción y difusión de hábitos alimentarios
-                      saludables para beneficio de la sociedad en general..</p>
-                    <div class="group-md group-middle"><a class="button button-secondary button-pipaluk"
-                        href="asociate.html">Asociate</a></div>
-                  </div>
-                </div>
-              </div>
-            </div>
+  </section>
+  </div>
+  <!-- Sección #bienvenidos -->
+  <section id="bienvenidos" class="py-5">
+
+    <div class="container">
+      <div class="row">
+        <div class="text-center col-12 col-lg-6">
+
+
+          <div class="contenedor-video d-inline-block position-relative text-truncate">
+
+            <img src="images/ARID 2020 marca-01 (Personalizado).png" alt="Imagen del video promocional del Sitio"
+              class="img-fluid">
+            <a href="https://youtu.be/cQPCLjNlclY" class="venobox-video" data-vbtype="video"
+              title="Bienvenidos ARID."><i class="fas fa-play"></i></a>
+
           </div>
         </div>
-      </div>
-    </section>
-    <!--	Our Services-->
-    <section class="section section-sm text-md-center">
-      <div class="container">
-        <h3>Nuestros Beneficios</h3>
-        <div class="row row-30">
-          <!--<div class="col-sm-6 col-lg-4">
-            <article class="box-icon-classic">
-              <div
-                class="unit box-icon-classic-body flex-column flex-md-row text-md-left flex-lg-column text-lg-center flex-xl-row text-xl-left">
-                <div class="unit-left">
-                  <div class="box-icon-classic-icon fl-bigmug-line-equalization3"></div>
-                </div>
-                <div class="unit-body">
-                  <h5 class="box-icon-classic-title"><a href="services.html">Busca un Profesional Asociado</a></h5>
-                  <p class="box-icon-classic-text">Our unique matching system lets you find just the tour you want for
-                    your next holiday.</p>
-                </div>
-              </div>
-            </article>
-          </div>!-->
-          <div class="col-sm-6 col-lg-4">
-            <article class="box-icon-classic">
-              <div
-                class="unit box-icon-classic-body flex-column flex-md-row text-md-left flex-lg-column text-lg-center flex-xl-row text-xl-left">
-                <div class="unit-left">
-                  <div class="box-icon-classic-icon fl-bigmug-line-wallet26"></div>
-                </div>
-                <div class="unit-body">
-                  <h5 class="box-icon-classic-title"><a href="http://mpago.la/1JixDiU">Pago de la Cuota Social</a></h5>
-                  <p class="box-icon-classic-text">Ingresá para hacer el pago de la cuota a través de mercado pago.</p>
-                </div>
-              </div>
-            </article>
-          </div>
-      
-          <div class="col-sm-6 col-lg-4">
-            <article class="box-icon-classic">
-              <div
-                class="unit box-icon-classic-body flex-column flex-md-row text-md-left flex-lg-column text-lg-center flex-xl-row text-xl-left">
-                <div class="unit-left">
-                  <div class="box-icon-classic-icon fl-bigmug-line-zoom60"></div>
-                </div>
-                <div class="unit-body">
-                  <h5 class="box-icon-classic-title"><a target="_blank"
-                      href="https://drive.google.com/file/d/1uGD3yem0pOwCHuD5IJr7C49W4Ny6WHqo/view?usp=sharing">Prestadores
-                      Autorizados Obra Social Provincia</a></h5>
-                  <p class="box-icon-classic-text">Listado de nutricionista autorizados por Obra Social Provincia. </p>
-                </div>
-              </div>
-            </article>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <article class="box-icon-classic">
-              <div
-                class="unit box-icon-classic-body flex-column flex-md-row text-md-left flex-lg-column text-lg-center flex-xl-row text-xl-left">
-                <div class="unit-left">
-                  <div class="box-icon-classic-icon fl-bigmug-line-list65"></div>
-                </div>
-                <div class="unit-body">
-                  <h5 class="box-icon-classic-title"><a target="_blank"
-                      href="https://drive.google.com/file/d/1yacfAy9fjM1IHgUPJ1AaPkUhxc15x-_g/view?usp=sharing">Honorarios
-                      Mínimos Éticos</a></h5>
-                  <p class="box-icon-classic-text">La ASN sugiere los honorarios mínimos profesional del
-                    nutricionista y del Licenciado en Nutrición. </p>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
- 
+        <div class="pt-4 text-center col-12 col-lg-6 pt-lg-0 ">
+          <h3 class="display-5 font-weight-bold text-arid mt-lg-n2">
+            BIENVENIDOS A.R.I.D
+          </h3><span class="separador-titulos"></span>
+          <h6 class="text-black-50"></h6>
+          <p id="texto">
+            ARID es una organización social sin fines de lucro que trabaja en redes con otras organizaciones, que
+            promueve y efectiviza a través de sus diferentes servicios la inclusión, que brinda apoyos a la Persona con
+            Discapacidad y sus entornos (familiar, educativo, social, laboral) a fin de que puedan ejercer sus derechos
+            para desarrollar un proyecto de vida.
+          </p>
+          <div>
 
-    <div class="footer-corporate-bottom-panel">
-      <div class="container">
-        <div class="row justfy-content-xl-space-berween row-10 align-items-md-center2">
-          <div class="col-sm-6 col-md-4 text-sm-right text-md-center">
-            <div>
-              <ul class="list-inline list-inline-sm footer-social-list-2">
-                <li><a target="_blank" class="icon fa fa-facebook"
-                    href="https://www.facebook.com/asociacionsanjuaninadenutricion"></a></li>
-                <li><a target="_blank" class="icon fa fa-instagram"
-                    href="https://www.instagram.com/asociacionnutricionsj/"></a></li>
-                <li><a target="_blank" class="icon fa fa-envelope-o" href="mailto:asanjuaninadenutricion@gmail.com"></a>
-                </li>
-                <li><a target="_blank" class="icon fa fa-whatsapp"
-                    href=" https://wa.me/5492644557387?text=Hola%20quisiera%20que%20me%20den%20mas%20información"></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 order-sm-first">
-            <!-- Rights-->
-            <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span> <span></span>.
-              All rights reserved<span>.</span>
-            </p>
-          </div>
+            <input class="mt-3 btn btn-primary " type="button" id="hablar" value="Escuchar"></p>
 
+
+
+          </div>
         </div>
       </div>
     </div>
+  </section>
+  <!-- <div>
+    
+ <input type="button" id="hablar" value="Decir">
+  </div>-->
+  <section class="section section-sm section-first bg-default text-md-left"></section>
+  <div class="breadcrumbs-custom context-dark bg-overlay-46">
+    <div class="container">
+      <h2 class="breadcrumbs-custom-title">Capacitaciones </h2>
 
+    </div>
+    <div class="box-position" style="background-image: url(images/formacion-arid.png);"></div>
   </div>
 
-  <!-- Javascript-->
+  </section>
+
+  <!-- Sección #bienvenidos -->
+  <section id="bienvenidos" class="py-5">
+
+    <div class="container">
+      <div class="row">
+        <div class="text-center col-12 col-lg-6">
+
+          <div class="fb-page" data-tabs="timeline,events,messages"
+            data-href="https://www.facebook.com/ARIDinclusionsanjuan" data-width="380" data-hide-cover="false"></div>
+
+        </div>
+        <div class="pt-4 text-center col-12 col-lg-6 pt-lg-0 ">
+          <h4 class="display-5 font-weight-bold text-arid mt-lg-n2">
+            Próxima Actividad/Evento
+          </h4><span class="separador-titulos"></span>
+          <h6 class="text-black-50"></h6>
+
+
+          <div class="col-12 col-lg-6 justify-content-center d-inline ">
+
+
+            <div class="mb-2">
+
+              <div class="font-weight-bold text-secondary h5">
+                <span class="counter" data-counterup-beginat="0" data-counterup-time="500">12</span>
+                <p class="mb-0">FEB</p>
+              </div>
+
+              <p class="mb-0">514 S. Magnolia St. Orlando, FL 32806.</p>
+              <div class="contador-linea"></div>
+            </div>
+
+
+            <div class="mb-2">
+
+              <div class="mb-2 font-weight-bold text-secondary h5">
+                <span class="counter" data-counterup-beginat="0" data-counterup-time="500">16</span>
+                <p class="mb-0">FEB</p>
+              </div>
+
+              <div class="contador-linea"></div>
+
+              <p class="mb-0">514 S. Magnolia St. Orlando, FL 32806.</p>
+            </div>
+
+            <div class="mb-2">
+
+              <div class="font-weight-bold text-secondary h5">
+                <span class="counter" data-counterup-beginat="0" data-counterup-time="500">20</span>
+                <p class="mb-0">FEB</p>
+              </div>
+
+              <div class="contador-linea"></div>
+
+              <p class="mb-0">514 S. Magnolia St. Orlando, FL 32806.</p>
+            </div>
+
+
+
+
+          </div>
+
+
+
+
+        </div>
+      </div>
+  </section>
+
+
+
+
+
+  <div class="footer-corporate-bottom-panel">
+    <div class="container">
+      <div class="row justfy-content-xl-space-berween row-10 align-items-md-center2">
+        <div class="col-sm-6 col-md-4 text-sm-right text-md-center">
+          <div>
+            <ul class="list-inline list-inline-sm footer-social-list-2">
+              <li><a target="_blank" class="icon fa fa-facebook" href="https://www.facebook.com/ARIDasociacion"></a>
+              </li>
+              <li><a target="_blank" class="icon fa fa-instagram"
+                  href="https://www.instagram.com/aridasociacion/?hl=es-la"></a></li>
+              <li><a target="_blank" class="icon fa fa-youtube" href="#"></a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 order-sm-first">
+          <!-- Rights-->
+          <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span> <span></span>.
+            All rights reserved<span>.</span>
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  </div>
   <script src="js/core.min.js"></script>
+
+  <!-- Carga de "VenoBox" -->
+  <script src="js/venobox.min.js"></script>
+  <!-- Carga de "Jarallax" -->
+  <script src="js/jarallax.min.js"></script>
+
   <script src="js/script.js"></script>
+
+  <script src="js/scrip.js"></script>
 
 
 

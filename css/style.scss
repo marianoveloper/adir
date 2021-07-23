@@ -6,6 +6,10 @@
 *
 * Contexts
 */
+$arid:#Eb1212;
+$arid2: #Ff9933;
+$principal:#19D8FE;
+$secundario:#35363c;
 a:focus,
 button:focus {
 	outline: none !important;
@@ -7785,17 +7789,19 @@ textarea.textarea-lg {
 	text-align: center;
 	background-color: #cccccc;
 	z-index: 1;
+	
 }
 
 .breadcrumbs-custom-path {
 	margin-left: -15px;
 	margin-right: -15px;
-	font-size: 14px;
+	font-size: 30px;
 	line-height: 1.33;
 	font-weight: 500;
 	letter-spacing: .1em;
 	text-transform: uppercase;
 	font-family: "Montserrat", sans-serif, Arial, sans-serif;
+	
 }
 
 .breadcrumbs-custom-path > * {
@@ -7808,6 +7814,8 @@ textarea.textarea-lg {
 	vertical-align: middle;
 	color: #ffffff;
 }
+
+
 
 .breadcrumbs-custom-path a, .breadcrumbs-custom-path a:active, .breadcrumbs-custom-path a:focus {
 	color: #ffffff;
@@ -7853,12 +7861,16 @@ textarea.textarea-lg {
 	* + .breadcrumbs-custom-path {
 		margin-top: 18px;
 	}
+	.breadcrumbs-custom-title2{
+		padding: 150px 0;
+	}
 }
 
 @media (min-width: 1200px) {
 	.breadcrumbs-custom {
 		padding: 150px 0;
 	}
+	
 }
 
 @media (min-width: 1600px) {
@@ -8806,7 +8818,7 @@ textarea.textarea-lg {
 
 .footer-corporate-bottom-panel {
 	padding: 30px 0;
-	background: #11263a;
+	background: #Eb1212;
 	color: rgba(255, 255, 255, 0.3);
 }
 
@@ -12431,7 +12443,8 @@ html [class*='section-'].section-top-0 {
 .context-dark h1,
 .bg-gray-dark h1,
 .bg-primary h1, .context-dark h2, .bg-gray-dark h2, .bg-primary h2, .context-dark h3, .bg-gray-dark h3, .bg-primary h3, .context-dark h4, .bg-gray-dark h4, .bg-primary h4, .context-dark h5, .bg-gray-dark h5, .bg-primary h5, .context-dark h6, .bg-gray-dark h6, .bg-primary h6, .context-dark [class*='heading-'], .bg-gray-dark [class*='heading-'], .bg-primary [class*='heading-'] {
-	color: #ffffff;
+	color: #3f295e;
+	
 }
 
 .context-dark .form-wrap.has-error .form-input, .bg-gray-dark .form-wrap.has-error .form-input, .bg-primary .form-wrap.has-error .form-input {
@@ -13789,7 +13802,7 @@ html.tablet .ui-to-top {
 }
 
 .rd-navbar-static .rd-nav-item.active .rd-nav-link {
-	color: #01b3a7;
+	color: #Ff9933;
 	background: transparent;
 }
 
@@ -13842,7 +13855,7 @@ html.tablet .ui-to-top {
 }
 
 .rd-navbar-static .rd-nav-link:hover {
-	color: #01b3a7;
+	color: #Ff9933;
 }
 
 .rd-navbar-static .rd-menu {
@@ -17074,7 +17087,7 @@ html.rd-navbar-fixed-linked .page {
 }
 
 .rd-navbar-corporate.rd-navbar-static .rd-navbar-main-outer {
-	background: #F2455A;
+	background: #Eb1212;
 }
 
 .rd-navbar-corporate.rd-navbar-static .rd-navbar-nav-wrap {
@@ -24671,3 +24684,157 @@ img.mfp-img {
 	width: 100%;
 	height: 100%;
 }
+
+/*-----------------------------------------
+8. ESTILOS PARA "#bienvenidos"
+------------------------------------------*/
+
+.contenedor-video a {
+    background-color: rgba(255, 255, 255, 0.79);
+    width: 7rem;
+    height: 7rem;
+    display: flex;
+    border-radius: 50%;
+    //color: $principal;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-clip: padding-box;
+    border: 0 solid transparent;
+    transition: all .5s ease;
+}
+
+.contenedor-video a:hover {
+   // background-color: $principal;
+    color: #fff;
+    border: 10px solid rgba(255, 255, 255, 0.50);
+}
+
+.contenedor-video img {
+    transition: all .5s ease;
+}
+
+.contenedor-video:hover img {
+    transform: scale(1.2);
+}
+.text-arid {
+    color: $arid !important;
+}
+
+/*-----------------------------------------
+15. ESTILOS PARA "#nuestra-app"
+------------------------------------------*/
+
+#nuestra-app::before {
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.50);
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.separador-titulos{
+	display: inline-block;
+	margin-top: 2rem;
+	height: 4px;
+	width: 80px;
+	background: $arid2;
+}
+
+/*-----------------------------------------
+3. ESTILOS COLOR PRINCIPAL
+------------------------------------------
+
+.bg-primary {
+    background-color: $principal !important;
+}*/
+
+.text-primary {
+    color: $principal !important;
+}
+
+/*Estilos btn-primary*/
+
+.btn-primary {
+    color: #fff;
+    background-color: $principal;
+    border-color: $principal;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: all .3s ease;
+}
+
+.btn-primary:hover {
+    color: $secundario;
+    background-color: #fff;
+    border-color: $principal;
+}
+
+.btn-primary:active {
+    color: $secundario !important;
+    background-color: lighten($principal, 5%) !important;
+    border-color: lighten($principal, 10%) !important;
+}
+/*Insertamos la fecha del boton principal*/
+
+.btn-primary:after {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: "\f027";
+    position: relative;
+    left: .6rem;
+    top: .1rem;
+    transition: left .3s ease;
+}
+
+.btn-primary:hover:after,
+.btn-primary:focus:after,
+.btn-primary:active:after {
+    left: .25rem;
+}
+
+/*Insertamos la caja blanca del boton principal*/
+
+.btn-primary:before {
+    content: "";
+    z-index: -1;
+    width: 0;
+    height: 100%;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: skew(45deg, 0);
+    transition: all .4s ease;
+}
+
+.btn-primary:hover:before,
+.btn-primary:focus:before,
+.btn-primary:active:before {
+    width: 130%;
+    left: -15%;
+}
+
+/*-----------------------------------------
+10. ESTILOS PARA "#premios"
+------------------------------------------*/
+
+.contador-linea {
+    background-color: $arid2;
+    width: 4rem;
+    height: .4rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all .5s ease;
+}
+
